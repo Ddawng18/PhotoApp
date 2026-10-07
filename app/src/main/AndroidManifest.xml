@@ -13,6 +13,12 @@
     android:theme="@style/Theme.ArticleApp">
     <activity android:name="thanhdnh.ueh.edu.article_app.ViewUserActivity"></activity>
     <activity
+      android:name="thanhdnh.ueh.edu.article_app.SettingsActivity"
+      android:exported="false"
+      android:label="@string/title_settings"
+      android:parentActivityName="thanhdnh.ueh.edu.article_app.MainActivity"
+      android:theme="@style/Theme.ArticleApp.Settings" />
+    <activity
       android:name="thanhdnh.ueh.edu.article_app.MainActivity"
       android:exported="true">
       <intent-filter>

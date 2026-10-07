@@ -2,6 +2,8 @@ package thanhdnh.ueh.edu.article_app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -24,11 +26,25 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    getSupportActionBar().hide();
 
     gridview = findViewById(R.id.gridview);
     new UserData(getBaseContext(), gridview).loadData("https://raw.githubusercontent.com/thanhdnh/json/main/users.json", this);
     gridview.setOnItemClickListener(onitemclick);
+  }
+
+  @Override
+  public boolean onCreateOptionsMenu(Menu menu) {
+    getMenuInflater().inflate(R.menu.menu_main, menu);
+    return true;
+  }
+
+  @Override
+  public boolean onOptionsItemSelected(MenuItem item) {
+    if (item.getItemId() == R.id.action_settings) {
+      startActivity(new Intent(this, SettingsActivity.class));
+      return true;
+    }
+    return super.onOptionsItemSelected(item);
   }
 
 }

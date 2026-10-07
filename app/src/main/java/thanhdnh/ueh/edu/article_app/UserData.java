@@ -48,10 +48,10 @@ public class UserData {
 
           if (list == null || list.getUserList() == null || list.getUserList().isEmpty()) {
               ArrayList<User> defaultUsers = new ArrayList<>();
-              defaultUsers.add(new User(1, "User One", "password123", "https://picsum.photos/id/1011/300/400", "Nature photographer and traveler."));
-              defaultUsers.add(new User(2, "User Two", "password123", "https://picsum.photos/id/1025/300/400", "Coffee enthusiast and software developer."));
-              defaultUsers.add(new User(3, "User Three", "password123", "https://picsum.photos/id/1062/300/400", "Art director and minimalist designer."));
-              defaultUsers.add(new User(4, "User Four", "password123", "https://picsum.photos/id/1074/300/400", "Mountain hiker and outdoor explorer."));
+              defaultUsers.add(new User(1, "User One", "password123", "https://i.ibb.co/C3B7p4bh/Illustration.jpg", "Nature photographer and traveler."));
+              defaultUsers.add(new User(2, "User Two", "password123", "https://i.ibb.co/C3B7p4bh/Illustration.jpg", "Coffee enthusiast and software developer."));
+              defaultUsers.add(new User(3, "User Three", "password123", "https://i.ibb.co/C3B7p4bh/Illustration.jpg", "Art director and minimalist designer."));
+              defaultUsers.add(new User(4, "User Four", "password123", "https://i.ibb.co/C3B7p4bh/Illustration.jpg", "Mountain hiker and outdoor explorer."));
               list = new UserList(defaultUsers);
           }
 

@@ -1,3 +1,31 @@
 <resources>
   <string name="app_name">Article View</string>
+
+  <!-- Main screen menu -->
+  <string name="action_settings">Settings</string>
+
+  <!-- Settings screen -->
+  <string name="title_settings">Setting</string>
+  <string name="pref_category_profile">Profile</string>
+
+  <string name="pref_title_gender">Gender</string>
+  <string name="pref_title_age">Age</string>
+  <string name="pref_title_display_name">Display name</string>
+  <string name="pref_title_email">Email</string>
+  <string name="pref_title_phone">Phone number</string>
+  <string name="pref_title_country">Country</string>
+  <string name="pref_title_notifications">Notifications</string>
+  <string name="pref_title_email_updates">Email updates</string>
+
+  <string name="pref_summary_age">Your age is %1$s</string>
+  <string name="pref_dialog_age">Enter your age</string>
+  <string name="pref_summary_notifications_on">Notifications are enabled</string>
+  <string name="pref_summary_notifications_off">Notifications are disabled</string>
+  <string name="pref_summary_email_updates_on">You will receive email updates</string>
+  <string name="pref_summary_email_updates_off">You will not receive email updates</string>
+  <string name="pref_summary_not_set">Not set</string>
+  <string name="pref_default_age">22</string>
+  <string name="pref_default_gender">male</string>
+  <string name="pref_default_country">vn</string>
+  <string name="pref_error_age">Please enter an age between 1 and 120</string>
 </resources>
